@@ -58,3 +58,22 @@ class Movie extends Media {
       return this._runTime;
     }
   }
+
+  // create a Book instance
+const historyOfEverything = new Book(
+    "A Short History of Nearly Everything",
+    "Bill Bryson",
+    544
+  );
+  
+  // call toggleCheckOutStatus on historyOfEverything instance
+  historyOfEverything.toggleCheckOutStatus();
+  console.log(historyOfEverything.isCheckedOut);
+  
+  // call addRating() on historyOfEverything with inputs of 4, 5, 5
+  historyOfEverything.addRating(4);
+  historyOfEverything.addRating(5);
+  historyOfEverything.addRating(5);
+  
+  // call getAverageRating on historyOfEverything, log result
+  console.log(historyOfEverything.getAverageRating());
