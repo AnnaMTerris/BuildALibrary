@@ -77,3 +77,20 @@ const historyOfEverything = new Book(
   
   // call getAverageRating on historyOfEverything, log result
   console.log(historyOfEverything.getAverageRating());
+
+  // create a Movie instance with properties
+const speed = new Movie('Speed', 'Jan de Bont', 116);
+
+// call toggleCheckOutStatus on speed instance
+speed.toggleCheckOutStatus();
+
+// log value saved to isCheckedOut 
+console.log(speed.isCheckedOut);
+
+// call addRating on speed with inputs of 1, 1, 5
+speed.addRating(1);
+speed.addRating(1);
+speed.addRating(5);
+
+// call getAverageRating on speed, log result
+console.log(speed.getAverageRating())
